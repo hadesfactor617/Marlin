@@ -136,7 +136,7 @@
  * Currently only supported for AVR, DUE, LPC1768/9 and STM32/STM32F1
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT_3 1
+#define SERIAL_PORT_3 3
 //#define BAUDRATE_3 250000   // Enable to override BAUDRATE
 
 // Enable the Bluetooth serial interface on AT90USB devices
@@ -1391,7 +1391,7 @@
 #define DELAY_BEFORE_PROBING 200  // (ms) To prevent vibrations from triggering piezo sensors
 
 // Require minimum nozzle and/or bed temperature for probing
-#define PREHEAT_BEFORE_PROBING
+//#define PREHEAT_BEFORE_PROBING
 #if ENABLED(PREHEAT_BEFORE_PROBING)
   #define PROBING_NOZZLE_TEMP 150   // (°C) Only applies to E0 at this time
   #define PROBING_BED_TEMP     60
@@ -1684,7 +1684,7 @@
 #define PREHEAT_BEFORE_LEVELING
 #if ENABLED(PREHEAT_BEFORE_LEVELING)
   #define LEVELING_NOZZLE_TEMP 150   // (°C) Only applies to E0 at this time
-  #define LEVELING_BED_TEMP     50
+  #define LEVELING_BED_TEMP     65
 #endif
 
 /**
@@ -2002,10 +2002,10 @@
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 #define PREHEAT_3_LABEL       "PETG"
-#define PREHEAT_2_TEMP_HOTEND 245
-#define PREHEAT_2_TEMP_BED    85
-#define PREHEAT_2_TEMP_CHAMBER 35
-#define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
+#define PREHEAT_3_TEMP_HOTEND 245
+#define PREHEAT_3_TEMP_BED    85
+#define PREHEAT_3_TEMP_CHAMBER 35
+#define PREHEAT_3_FAN_SPEED     0 // Value from 0 to 255
 /**
  * Nozzle Park
  *
